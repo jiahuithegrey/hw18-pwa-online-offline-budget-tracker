@@ -9,7 +9,7 @@ This app gives users a fast and easy way to track their money and allow them to 
 ## Demo
 Heroku Deployment: [Budget Tracker](https://hw18-pwa-budget-tracker.herokuapp.com/)
 
-[Budget Tracker Demo](demo/budgettracker.gif)
+![Budget Tracker Demo](demo/budgettracker.gif)
 
 ## Development
 * Utilize Service worker to make the app function during offline
