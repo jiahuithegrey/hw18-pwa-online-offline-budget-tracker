@@ -11,6 +11,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="./dist/manifest.cfba2056a613332d0922bb2bbdaa2dfd.json" />
     <title>Budget Tracker</title>
   </head>
   <body>
@@ -48,9 +49,25 @@
       <canvas id="my-chart"></canvas>
     </div>
 
+    <script type="text/javascript">
+      (function() {
+        if("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("./service-worker.js", {
+            scope: "http://localhost:4000"
+          })
+            .then((res) => {
+              console.log(res);
+              console.log("Service Worker registered successfully.");
+            })
+            .catch(error => console.log("Service Worker registration failed:", error));
+        }
+      })();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="./js/db.js"></script>
-    <script src="./js/index.js"></script>
-    <script src = "dist/bundle.js"></script>
+    <!-- <script src="./js/db.js"></script>
+    <script src="./js/index.js"></script> -->
+    <script src = "./dist/db.bundle.js"></script>
+    <script src = "./dist/app.bundle.js"></script>
   </body>
 </html>
