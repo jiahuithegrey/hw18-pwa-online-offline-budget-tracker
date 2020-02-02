@@ -7,9 +7,9 @@ This app gives users a fast and easy way to track their money and allow them to 
 * Database: MongoDB, Mongoose schema
 
 ## Demo
-Heroku Deployment: [Workout Tracker](https://hw18-pwa-budget-tracker.herokuapp.com/)
+Heroku Deployment: [Budget Tracker](https://hw18-pwa-budget-tracker.herokuapp.com/)
 
-<!-- ![Workout Tracker Demo](demo/FitnessTrackerDemo.gif) -->
+!Budget Tracker Demo](demo/budgettracker.gif)
 
 ## Development
 * Utilize Service worker to make the app function during offline
