@@ -13,7 +13,7 @@ Heroku Deployment: [Budget Tracker](https://hw18-pwa-budget-tracker.herokuapp.co
 
 ## Development
 * Utilize Service worker to make the app function during offline
-* Utlize Webpack and manifest to bundle files 
+* Utlize Webpack and manifest to bundle files for compression
 * Utilize MongoDB and Mongoose Schema to create, edit and get data
 
 
