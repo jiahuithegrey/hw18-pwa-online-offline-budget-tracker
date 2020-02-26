@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 const app = express();
-const PORT = process.env.MONGODB_URI || 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(logger("dev"));
 
@@ -14,10 +14,11 @@ app.use(express.json());
 
 app.use(express.static("client"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://user:password7@ds125841.mlab.com:25841/heroku_dxmk3vsz",
+  {
+    useMongoClient: true
+  });
 
 // Requiring our models for syncing
 // const db = require("./models");
